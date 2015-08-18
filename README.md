@@ -1,5 +1,7 @@
 # project-2-Todo 
 
+A jstogether project. Follow us on slack and reddit [https://www.reddit.com/r/jstogether](https://www.reddit.com/r/jstogether/).
+
 ## Running The App
 
 To run the app, follow these steps.
