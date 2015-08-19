@@ -1,4 +1,4 @@
-# project-2-Todo 
+# project-2-VoteApp 
 
 A jstogether project. Follow us on slack and reddit [https://www.reddit.com/r/jstogether](https://www.reddit.com/r/jstogether/).
 
