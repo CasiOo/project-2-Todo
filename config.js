@@ -12,7 +12,11 @@ System.config({
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*"
   },
-
+  // meta: {
+    // "core/data-access/*.json": {
+     // loader: "JSON"
+    // }
+  // },
   map: {
     "aurelia-animator-css": "github:aurelia/animator-css@0.15.0",
     "aurelia-binding": "github:aurelia/binding@0.8.6",
@@ -41,9 +45,12 @@ System.config({
     "clean-css": "npm:clean-css@3.3.9",
     "core-js": "npm:core-js@0.9.18",
     "css": "github:systemjs/plugin-css@0.1.13",
+    "json": "github:systemjs/plugin-json@0.1.0",
+    "dexie": "npm:dexie@1.1.0",
+    "dogfalo/materialize": "github:dogfalo/materialize@0.97.0",
+    "events": "github:jspm/nodelibs-events@0.1.1",
     "fetch": "github:github/fetch@0.9.0",
     "font-awesome": "npm:font-awesome@4.4.0",
-    "google/material-design-lite": "github:google/material-design-lite@1.0.2",
     "normalize.css": "github:necolas/normalize.css@3.0.3",
     "github:aurelia/animator-css@0.15.0": {
       "aurelia-metadata": "github:aurelia/metadata@0.7.3",
@@ -154,6 +161,10 @@ System.config({
       "aurelia-path": "github:aurelia/path@0.8.1",
       "aurelia-task-queue": "github:aurelia/task-queue@0.6.2",
       "core-js": "npm:core-js@0.9.18"
+    },
+    "github:dogfalo/materialize@0.97.0": {
+      "css": "github:systemjs/plugin-css@0.1.13",
+      "jquery": "github:components/jquery@2.1.4"
     },
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"

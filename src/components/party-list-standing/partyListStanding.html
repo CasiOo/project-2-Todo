@@ -1,0 +1,19 @@
+<template>
+    <ul class="collection with-header">
+        <li class="collection-header party-list-header">
+            <div class="votes">Votes</div>
+            <div class="votePercentage">Pct.</div>
+        </li>
+        <li class="collection-item party-list-item blue-grey" repeat.for="party of standing.parties">
+            <!--<div class="party-color-fade" css="background-color: ${party.color};"></div>-->
+            <div class="party-letter" css="background-color: ${party.color};">${party.letter}</div>
+            <div class="bar">
+                <!--<div class="party-color-fade" css="background-color: ${party.color};"></div>-->
+                <div class="percentage-bar" css="width: ${$parent.votesToBarWidth(party.votes)}%; background-color: ${party.color};"></div>
+                <div class="party-name">${party.shortName}</div>
+            </div>
+            <div class="votes">${$parent.formatVotes(party.votes)}</div>
+            <div class="votePercentage">${$parent.formatPercentage(party.votePercentage)} %</div>
+        </li>
+    </ul>
+</template>

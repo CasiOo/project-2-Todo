@@ -54,9 +54,11 @@
       "clean-css": "npm:clean-css@^3.3.8",
       "core-js": "npm:core-js@^0.9.4",
       "css": "github:systemjs/plugin-css@^0.1.11",
+      "dexie": "npm:dexie@^1.1.0",
+      "dogfalo/materialize": "github:dogfalo/materialize@^0.97.0",
+      "events": "github:jspm/nodelibs-events@^0.1.1",
       "fetch": "github:github/fetch@^0.9.0",
       "font-awesome": "npm:font-awesome@^4.3.0",
-      "google/material-design-lite": "github:google/material-design-lite@^1.0.2",
       "normalize.css": "github:necolas/normalize.css@^3.0.3"
     },
     "devDependencies": {
@@ -67,9 +69,6 @@
     "overrides": {
       "npm:core-js@0.9.18": {
         "main": "client/shim.min"
-      },
-      "github:google/material-design-lite@1.0.2": {
-        "main": "material.js"
       }
     }
   }

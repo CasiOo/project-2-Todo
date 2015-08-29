@@ -1,33 +1,143 @@
-* {
+*, *:before, *:after {
 	box-sizing: content-box;
-    font-family: "Roboto","Helvetica","Arial",sans-serif;
 }
 
-header {
-    height: 20rem;
-    line-height: 20rem;
-    font-size: 8rem;
-    font-family: 'Shadows Into Light', cursive;
-    font-weight: bold;
-    background-color: #E51875;
-    color: #FAB250;
-    text-align: center;
+body {
+    background-color: #fcfcfc;
 }
 
-.main-content {
-    min-height: 500px;
-    background: #f9f9f9;
+.header {
+    color: #0277bd;
 }
 
-main {
-    width: 100%;
-    max-width: 640px;
-    margin: 1rem auto;
+nav.top-nav {
+  height: 122px;
 }
 
-/* TODO Move home styles inside their own css file, and load as module */
-.home .startgame-btn {
+nav.top-nav a.page-title {
+    line-height: 122px;
+    font-size: 48px; 
+}
+
+party-list-standing .collection {
+    border: none;
+    margin: 0;
+}
+
+party-list-standing .party-list-header,
+party-list-standing .party-list-item {
     display: flex;
-    margin: 0 auto;
+    flex-direction: row;
+    justify-content: flex-end;
+    color: white;
+    position: relative;
+    
+    /* !important to override materialize styles */
+    padding: 0!important;
+    height: 40px!important;
+    line-height: 40px!important;
+    border-bottom: 1px solid #546e7a!important;
 }
 
+party-list-standing .party-list-header {
+    font-weight: bold;
+    color: black;
+    border-bottom: none!important;
+    background-color: transparent!important;
+}
+
+party-list-standing .party-list-item:last-child {
+    border-bottom: none!important;
+}
+
+/*
+party-list-standing .party-list-item  .party-color-fade {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    z-index: 1;
+    position: absolute;
+    opacity: 0.65;
+}
+*/
+
+party-list-standing .party-list-header .votes,
+party-list-standing .party-list-item .votes {
+    /* Fixed width, so the bar width is constant across all parties */
+    width: 70px;
+    text-align: right;
+    flex-shrink: 0;
+    align-self: flex-end;
+    z-index: 2;
+}
+
+party-list-standing .party-list-header .votePercentage,
+party-list-standing .party-list-item .votePercentage {
+    /* Fixed width, so the bar width is constant across all parties */
+    width: 70px;
+    text-align: right;
+    flex-shrink: 0;
+    align-self: flex-end;
+    font-weight: bold;
+    padding-right: 10px;
+    z-index: 2;
+}
+
+party-list-standing .party-list-item .party-letter {
+    flex-shrink: 0;
+    font-weight: bold;
+    text-align: center;
+    align-self: center;
+    height: 100%;
+    width: 40px;
+    z-index: 2;
+}
+
+party-list-standing .party-list-item .bar {
+    flex-grow: 1;
+    position: relative;
+}
+
+/*
+party-list-standing .party-list-item .bar .party-color-fade {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    z-index: 1;
+    position: absolute;
+    opacity: 0.7;
+}
+*/
+
+party-list-standing .party-list-item .bar .percentage-bar {
+    height: 100%;
+    min-height: 100%;
+    z-index: 2;
+    position: absolute;
+    transition: width 1s ease-in-out;
+}
+
+party-list-standing .party-list-item .bar .party-name {
+    margin-left: 10px;
+    z-index: 3;
+    position: relative;
+}
+
+head-to-head-standing .head-to-head-bar {
+    display: flex;
+}
+
+head-to-head-standing .percentage-bar {
+
+}
+
+head-to-head-standing .percentage-bar-right {
+    flex-grow: 1;
+}
+
+head-to-head-standing .vote-percentage {
+    color: white;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+}

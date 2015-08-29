@@ -1,0 +1,12 @@
+<template>
+    <div class="head-to-head-bar">
+        <img class="responsive-img" src="/images/candidates/lars-loekke-avatar-50x50.jpg">
+        <div class="percentage-bar" css="width: ${votesToBarWidth(standing.party1.votes)}%; background-color: ${standing.party1.color};">
+            <p class="vote-percentage right-align">${formatPercentage(standing.party1.votePercentage)}%</p>
+        </div>
+        <div class="percentage-bar percentage-bar-right" css="width: ${votesToBarWidth(standing.party2.votes)}%; background-color: ${standing.party2.color};">
+            <p class="vote-percentage left-align">${formatPercentage(standing.party2.votePercentage)}%</p>
+        </div>
+        <img class="responsive-img" src="/images/candidates/helle-thorning-avatar-50x50.jpg">
+    </div>
+</template>

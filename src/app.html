@@ -1,13 +1,17 @@
 <template>
+    <link rel="stylesheet" href="jspm_packages/npm/font-awesome@4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    
     <header>
-        It'sssssssssss quiz time!
+        <nav class="top-nav light-blue darken-3">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#" class="page-title">Election App</a>
+                </div>
+            </div>
+        </nav>
     </header>
-    <section class="main-content">
-        <main>
-            <router-view></router-view>
-        </main>
-    </section>
-    <footer class="mdl-mini-footer">
-        <span style="text-align: center; width: 100%;">A JSTogether project - @CasiOo</span>
-    </footer>
+    <main class="container">
+        <router-view></router-view>
+    </main>
 </template>

@@ -1,0 +1,53 @@
+{
+    elections: '++id',
+    electionParties: '++id,electionId,name,letter',
+    candidates: '++id,electionId,partyId,name,isTopCandidate',
+    electionStandings: '++id,electionId,measurementDate'
+}
+
+/*
+ * Full schema
+ */
+/*
+elections: {
+    id,
+    period: {
+        start,
+        end
+    },
+    title
+}
+ 
+candidates: {
+    id,
+    electionId,
+    partyId,
+    name,
+    shortName,
+    isTopCandidate
+}
+
+electionParties: {
+    id,
+    electionId,
+    name,
+    shortName,
+    letter,
+    color
+}
+
+electionStandings: {
+    id,
+    electionId,
+    measurementDate,
+    parties: [
+        id,
+        votes // Votes for party + candidate votes
+    ],
+    candidates: [
+        id,
+        votes
+    ]
+}
+*/
+

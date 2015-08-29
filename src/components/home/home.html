@@ -1,7 +1,22 @@
 <template>
-    <div class="home">
-        <button click.delegate="startGame()" class="startgame-btn mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
-            Start game
-        </button>
+    <require from="components/party-list-standing/partyListStanding"></require>
+    <require from="components/head-to-head/headToHeadStanding"></require>
+    
+    <div class="row">
+        <div class="col s12">
+            <h2 class="header center-align">Head-to-head</h2>
+            <p class="center-align">Compare two parties against each other. Updates itself periodically.</p>
+            
+            <head-to-head-standing></head-to-head-standing>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col s12 m6 l6">
+            <h2 class="header">Party list standing</h2>
+            <p>List all parties and their current standing. Updates itself periodically.</p>
+            
+            <party-list-standing></party-list-standing>
+        </div>
     </div>
 </template>
