@@ -2,6 +2,14 @@
 
 A jstogether project. Follow us on slack and reddit [https://www.reddit.com/r/jstogether](https://www.reddit.com/r/jstogether/).
 
+## Reset database (Chrome)
+
+Type the following in your console: 
+
+    indexedDB.deleteDatabase("ElectionDatabase");
+
+Refresh page
+
 ## Running The App
 
 To run the app, follow these steps.

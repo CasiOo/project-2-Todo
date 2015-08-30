@@ -13,4 +13,9 @@ export class Home {
     attached() {
 
     }
+    
+    onResetClick() {
+        indexedDB.deleteDatabase('ElectionDatabase');
+        location.reload();
+    }
 }

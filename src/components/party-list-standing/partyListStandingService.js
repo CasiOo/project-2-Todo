@@ -1,5 +1,5 @@
 import {inject} from 'aurelia-framework';
-import {PartyListStandingRepository} from 'components/party-list-standing/PartyListStandingRepository';
+import {PartyListStandingRepository} from 'components/party-list-standing/partyListStandingRepository';
 
 @inject(PartyListStandingRepository)
 export class PartyListStandingService {

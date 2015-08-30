@@ -1,5 +1,5 @@
 import {inject} from 'aurelia-framework';
-import {HeadToHeadRepository} from 'components/head-to-head/HeadToHeadRepository';
+import {HeadToHeadRepository} from 'components/head-to-head/headToHeadRepository';
 
 @inject(HeadToHeadRepository)
 export class HeadToHeadService {
